@@ -1851,23 +1851,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 /* --- Fix for sidebar size on large desktops --- */
 @media (min-width: 1250px) {
-  /* make sidebar a fixed-width column and main-content flexible */
+   /* make sidebar a fixed-width column and main-content flexible */
+   /* make sidebar a fixed-width column and main-content flexible */
   .sidebar {
+
     flex: 0 0 320px; /* সূত্র: sidebar কখনো 320px থেকে ছোট হবে না */
-    width: 320px;
+.sidebar {
+     flex: 0 0 320px; /* সূত্র: sidebar কখনো 320px থেকে ছোট হবে না */
+     flex: 0 0 320px; /* সূত্র: sidebar কখনো 320px থেকে ছোট হবে না */
+     width: 320px;
+     width: 320px;
     min-width: 320px;
+    width: 360px;
   }
+     min-width: 320px;
+     min-width: 320px;
+	height:700px;
+   }
+   }
 
-  .main-content {
-    flex: 1 1 auto;   /* main-content বাকি জায়গা ভরিয়ে নেবে */
-    min-width: 0;     /* flex item overflow সমস্যা এড়াতে */
-  }
 
-  /* (ঐচ্ছিক) sidebar ভিতরের spacing বড় করলে ভালো লাগে */
-  .sidebar { padding: 40px; }
-  .avatar-box img { width: 160px; } /* যদি avatar ছোট লেগে থাকে বাড়াতে পারবেন */
-}
-@media (min-width: 1250px) {
-  .sidebar { flex: 0 0 25%; max-width: 340px; min-width: 280px; }
-  .main-content { flex: 1; min-width: 0; }
-}
+   .main-content {
+   .main-content {
+     flex: 1 1 auto;   /* main-content বাকি জায়গা ভরিয়ে নেবে */
+     flex: 1 1 auto;   /* main-content বাকি জায়গা ভরিয়ে নেবে */
+     min-width: 0;     /* flex item overflow সমস্যা এড়াতে */
+     min-width: 0;     /* flex item overflow সমস্যা এড়াতে */
+   }
+   }
