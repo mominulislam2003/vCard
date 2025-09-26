@@ -1867,3 +1867,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar { padding: 40px; }
   .avatar-box img { width: 160px; } /* যদি avatar ছোট লেগে থাকে বাড়াতে পারবেন */
 }
+@media (min-width: 1250px) {
+  .sidebar { flex: 0 0 25%; max-width: 340px; min-width: 280px; }
+  .main-content { flex: 1; min-width: 0; }
+}
